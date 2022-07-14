@@ -23,7 +23,7 @@ const Header: React.FC = () => {
   return (
     <div className="h-12 w-full px-4 md:px-7 lg:px-10 flex items-center justify-end gap-3 md:gap-4">
       <div className="flex items-center gap-3 md:gap-4">
-        <HeaderLink to="s">Images</HeaderLink>
+        <HeaderLink to="/search">Images</HeaderLink>
         <HeaderLink to="a">Videos</HeaderLink>
         <HeaderLink to="b">News</HeaderLink>
       </div>

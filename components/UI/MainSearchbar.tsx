@@ -20,7 +20,7 @@ const MainSearchBar: React.FC<Props> = ({ keyword, setKeyword }) => {
           return;
         }
 
-        alert(keyword);
+        router.push(`search/${keyword}`);
       }}
     >
       <div className="relative rounded-full flex items-center bg-white hover:shadow-[0_0_11px_-1px_rgba(0,0,0,0.5)] focus:shadow-[0_0_11px_-1px_rgba(0,0,0,0.5)] transition">
