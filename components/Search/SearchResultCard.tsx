@@ -1,5 +1,5 @@
-import AdditionalLinkResult from '../../interfaces/SearchResult/AdditionalLinkResult';
-import SearchResultLink from '../../interfaces/SearchResult/SearchResultLink';
+import AdditionalLinkResult from '../../interfaces/Result/AdditionalLinkResult';
+import SearchResultLink from '../../interfaces/Result/SearchResultLink';
 
 interface RelatedProps {
   link: AdditionalLinkResult;

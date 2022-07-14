@@ -2,14 +2,14 @@ import { GetServerSideProps, NextPage } from 'next';
 import { APIfetcher } from '../../helpers/fetchAPI';
 
 // INTERFACES
-import ImageResult from '../../interfaces/ImageResult';
+import Result from '../../interfaces/Result';
 
 // COMPONENTS
 import LayoutSearch from '../../components/LayoutSearch';
 import ImageCard from '../../components/Image/ImageCard';
 
 interface Props {
-  data: ImageResult;
+  data: Result;
 }
 
 const ImageResult: NextPage<Props> = ({ data }) => {

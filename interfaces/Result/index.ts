@@ -1,14 +1,14 @@
 import SearchResultLink from './SearchResultLink';
-import ImageResults from '../ImageResult/ImageResults';
+import ImageResult from './ImageResults';
 
-interface SearchResult {
+interface Result {
   results: SearchResultLink[];
   total: number;
   answers: string[];
-  image_results: unknown[] | ImageResults[];
+  image_results: ImageResult[] | [];
   ts: number;
   device_region: string;
   device_type: string;
 }
 
-export default SearchResult;
+export default Result;

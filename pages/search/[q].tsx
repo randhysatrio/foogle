@@ -2,7 +2,7 @@ import { GetServerSideProps, NextPage } from 'next';
 import { APIfetcher } from '../../helpers/fetchAPI';
 
 // INTERFACE
-import SearchResult from '../../interfaces/SearchResult';
+import Result from '../../interfaces/Result';
 
 // COMPONENTS
 import LayoutSearch from '../../components/LayoutSearch';
@@ -11,7 +11,7 @@ import SearchAnswerCard from '../../components/Search/SearchAnswerCard';
 import Pagination from '../../components/Search/Pagination';
 
 interface Props {
-  data: SearchResult;
+  data: Result;
 }
 
 const SearchResult: NextPage<Props> = ({ data }) => {

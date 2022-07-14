@@ -9,8 +9,6 @@ interface LinkProps {
 const HeaderLink: React.FC<LinkProps> = ({ children, to }) => {
   const router = useRouter();
 
-  console.log(router.asPath.includes(to));
-
   return (
     <span
       onClick={() => router.push(to)}
@@ -28,7 +26,7 @@ const Header: React.FC = () => {
     <div className="h-12 w-full px-4 md:px-7 lg:px-10 flex items-center justify-end gap-3 md:gap-4">
       <div className="flex items-center gap-3 md:gap-4">
         <HeaderLink to="/images">Images</HeaderLink>
-        <HeaderLink to="a">Videos</HeaderLink>
+        <HeaderLink to="/videos">Videos</HeaderLink>
         <HeaderLink to="b">News</HeaderLink>
       </div>
       <div className="flex items-center justify-center">

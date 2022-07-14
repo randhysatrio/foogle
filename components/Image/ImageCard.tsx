@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ImageResults from '../../interfaces/ImageResult/ImageResults';
+import ImageResults from '../../interfaces/Result/ImageResults';
 
 interface Props {
   result: ImageResults;

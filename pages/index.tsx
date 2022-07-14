@@ -6,6 +6,7 @@ import MainSearchBar from '../components/UI/MainSearchbar';
 
 const Home: NextPage = () => {
   const [keyword, setKeyword] = useState<string>('');
+
   return (
     <Layout>
       <div style={{ height: 'calc(100vh - 9rem)' }} className="flex flex-col items-center justify-center">
