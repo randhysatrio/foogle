@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 
-import ResultSearchBar from '../UI/ResultSearchBar';
+import ResultSearchBar from './ResultSearchBar';
+import { CgMenuGridO } from 'react-icons/cg';
 
 interface ButtonProps {
   children: string;
@@ -27,15 +28,18 @@ const LayoutHeader: React.FC = () => {
   const router = useRouter();
 
   return (
-    <div className="w-full flex flex-col pt-4 md:pt-6 px-5 md:px-9 border-b">
+    <div className="w-full flex flex-col pt-4 md:pt-6 px-3 md:px-9 border-b">
       <div className="w-full flex items-center justify-between md:justify-start md:gap-6 pb-2">
         <span onClick={() => router.push('/')} className="text-xl md:text-3xl font-bold">
           Foogle
         </span>
         <ResultSearchBar />
+        <span className="text-xl md:text-3xl md:ml-auto active:scale-95 transition cursor-pointer">
+          <CgMenuGridO />
+        </span>
       </div>
 
-      <div className="w-full flex items-center justify-center md:justify-start md:pl-10">
+      <div className="w-full flex items-center justify-center md:justify-start md:pl-10 lg:pl-20">
         <HeaderButton val="search">All</HeaderButton>
         <HeaderButton val="image">Image</HeaderButton>
         <HeaderButton val="videos">Videos</HeaderButton>

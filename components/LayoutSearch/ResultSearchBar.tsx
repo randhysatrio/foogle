@@ -33,7 +33,7 @@ const ResultSearchBar: React.FC = () => {
           type="text"
           value={keyword}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => setKeyword(e.target.value)}
-          className="w-[255px] md:w-[500px] lg:w-[600px] h-9 md:h-12 px-11 md:px-14 rounded-full focus:outline-none border cursor-pointer md:text-lg"
+          className="w-[250px] md:w-[500px] lg:w-[600px] h-9 md:h-12 px-11 md:px-14 rounded-full focus:outline-none border cursor-pointer md:text-lg"
         />
         <span
           onClick={() => setKeyword('')}
