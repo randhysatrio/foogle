@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
     <div className="h-24 w-full flex flex-col justify-center bg-footer_color">
       <div className="h-1/2 w-full px-4 md:px-9 lg:px-12 border-b flex items-center gap-2 text-gray-800 group text-sm md:text-base">
         <BsGlobe className="transition cursor-pointer group-hover:text-gray-600 group-active:scale-95" />
-        <span className="font-semibold group-hover:text-gray-600 transition cursor-pointer ">Indonesia</span>
+        <span className="font-semibold group-hover:text-gray-600 transition cursor-pointer ">English</span>
       </div>
       <div className="h-1/2 w-full px-4 md:px-9 lg:px-12 flex flex-col md:flex-row items-center justify-center md:justify-between">
         <div className="flex items-center gap-4 pb-[3px] md:pb-0">

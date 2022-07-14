@@ -15,7 +15,6 @@ interface Props {
 }
 
 const SearchResult: NextPage<Props> = ({ data }) => {
-  console.log(data);
   return (
     <LayoutSearch>
       <div className="min-h-screen flex flex-col py-3 lg:py-4 px-5 md:px-9 lg:px-20">
@@ -49,7 +48,7 @@ const SearchResult: NextPage<Props> = ({ data }) => {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   try {
     const url = context.resolvedUrl;
-    const path = url.split('/')[1];
+    const path = 'search';
     const query = url.split('/')[url.split('/').length - 1];
 
     const data = await APIfetcher({ path, query });
